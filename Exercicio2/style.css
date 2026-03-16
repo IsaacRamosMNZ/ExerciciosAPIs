@@ -1,0 +1,102 @@
+:root {
+    --bg-top: #f7f3e9;
+    --bg-bottom: #d9e8ff;
+    --card: #ffffff;
+    --text: #152238;
+    --muted: #4b5c77;
+    --accent: #0b63f3;
+    --ok-bg: #e8f7ee;
+    --ok-border: #8cd3a2;
+    --err-bg: #fdecec;
+    --err-border: #e3a2a2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    color: var(--text);
+    background: linear-gradient(160deg, var(--bg-top), var(--bg-bottom));
+    padding: 28px 14px;
+}
+
+h1 {
+    margin: 0 0 16px;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+
+form,
+.mensagem,
+h1 {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background: var(--card);
+    border: 1px solid #d6dff0;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(21, 34, 56, 0.12);
+    padding: 20px;
+    display: grid;
+    gap: 14px;
+}
+
+label {
+    font-weight: 700;
+    color: var(--muted);
+}
+
+input {
+    width: 100%;
+    border: 1px solid #bdcce6;
+    border-radius: 10px;
+    padding: 11px 12px;
+    margin-top: 6px;
+    font-size: 0.98rem;
+    background: #fcfdff;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(11, 99, 243, 0.18);
+}
+
+button {
+    justify-self: start;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 11px 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.05);
+}
+
+.mensagem {
+    margin-bottom: 14px;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-weight: 600;
+}
+
+.sucesso {
+    background: var(--ok-bg);
+    border: 1px solid var(--ok-border);
+}
+
+.erro {
+    background: var(--err-bg);
+    border: 1px solid var(--err-border);
+}

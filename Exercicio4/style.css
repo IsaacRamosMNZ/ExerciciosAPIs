@@ -1,0 +1,139 @@
+:root {
+    --bg-a: #eaf2ff;
+    --bg-b: #f8f5ec;
+    --card: #ffffff;
+    --text: #1b2a3a;
+    --muted: #5d6b79;
+    --border: #d8e0ea;
+    --accent: #0f5bd8;
+    --ok-bg: #eaf8ef;
+    --ok-border: #94d4aa;
+    --err-bg: #fff0f0;
+    --err-border: #e5a8a8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    color: var(--text);
+    background: linear-gradient(135deg, var(--bg-a), var(--bg-b));
+    padding: 28px 14px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(16, 34, 54, 0.1);
+    padding: 22px;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.subtitulo {
+    margin: 0 0 20px;
+    color: var(--muted);
+}
+
+.form-busca {
+    display: grid;
+    gap: 8px;
+}
+
+label {
+    font-weight: 700;
+}
+
+.linha-campo {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    border: 1px solid #c3cfdd;
+    border-radius: 10px;
+    padding: 11px 12px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(15, 91, 216, 0.18);
+}
+
+button {
+    border: 0;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    padding: 11px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.05);
+}
+
+.mensagem {
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.sucesso {
+    background: var(--ok-bg);
+    border: 1px solid var(--ok-border);
+}
+
+.erro {
+    background: var(--err-bg);
+    border: 1px solid var(--err-border);
+}
+
+.resultado {
+    margin-top: 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+}
+
+.resultado h2 {
+    margin: 0 0 10px;
+}
+
+.resultado ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.resultado li {
+    background: #f8fbff;
+    border: 1px solid #dce8f6;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+@media (max-width: 560px) {
+    .linha-campo {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

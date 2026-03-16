@@ -1,0 +1,84 @@
+:root {
+    --bg-a: #eff7ff;
+    --bg-b: #fff6ea;
+    --card: #ffffff;
+    --text: #1d2838;
+    --muted: #5a6575;
+    --line: #d6e0ee;
+    --accent: #0a69df;
+    --err-bg: #ffeef0;
+    --err-line: #e3a1a9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    color: var(--text);
+    background: linear-gradient(130deg, var(--bg-a), var(--bg-b));
+    padding: 26px 14px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.subtitulo {
+    margin: 0 0 18px;
+    color: var(--muted);
+}
+
+.grid-usuarios {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card-usuario {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 8px 20px rgba(25, 42, 61, 0.1);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card-usuario:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(25, 42, 61, 0.14);
+}
+
+.card-usuario h2 {
+    margin: 0 0 10px;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.card-usuario p {
+    margin: 6px 0;
+}
+
+.mensagem {
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.erro {
+    background: var(--err-bg);
+    border: 1px solid var(--err-line);
+}
+
+.vazio {
+    background: #f8fbff;
+    border: 1px dashed var(--line);
+}

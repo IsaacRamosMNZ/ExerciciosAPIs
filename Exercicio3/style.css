@@ -1,0 +1,82 @@
+:root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #1b2430;
+    --muted: #5c6773;
+    --line: #d8e1ec;
+    --head: #0f4c81;
+    --head-text: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(180deg, #eef3ff, var(--bg));
+    color: var(--text);
+    padding: 24px 14px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: 0 10px 26px rgba(12, 34, 56, 0.09);
+    padding: 20px;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.subtitulo {
+    margin: 0 0 18px;
+    color: var(--muted);
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 540px;
+}
+
+thead th {
+    background: var(--head);
+    color: var(--head-text);
+    text-align: left;
+    padding: 10px;
+}
+
+tbody td {
+    border-bottom: 1px solid var(--line);
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background: #f8fbff;
+}
+
+.vazio,
+.erro {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.vazio {
+    border: 1px dashed var(--line);
+    background: #fbfcff;
+}
+
+.erro {
+    border: 1px solid #efb1b1;
+    background: #fff1f1;
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "nome": "Mouse",
+        "preco": 59.90,
+        "categoria": "Informática"
+    },
+    {
+        "nome": "Teclado",
+        "preco": 120.00,
+        "categoria": "Informática"
+    },
+    {
+        "nome": "Caderno",
+        "preco": 18.50,
+        "categoria": "Papelaria"
+    },
+    {
+        "nome": "Folha de Papel",
+        "preco": 0.50,
+        "categoria": "Papelaria"
+    }
+]

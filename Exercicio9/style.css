@@ -1,0 +1,91 @@
+:root {
+    --bg-a: #f1f7ff;
+    --bg-b: #fff6ef;
+    --card: #ffffff;
+    --text: #1a2938;
+    --line: #d8e2ee;
+    --accent: #1261cf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: var(--text);
+    background: linear-gradient(135deg, var(--bg-a), var(--bg-b));
+    padding: 24px 14px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 12px;
+}
+
+.acoes {
+    margin-bottom: 16px;
+}
+
+button {
+    border: 0;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.bloco h2 {
+    margin: 0 0 12px;
+}
+
+.grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 8px 20px rgba(20, 36, 53, 0.09);
+}
+
+.card h3 {
+    margin: 0 0 8px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.mensagem {
+    padding: 11px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.sucesso {
+    background: #e9f8ef;
+    border: 1px solid #9cd3ad;
+}
+
+.erro {
+    background: #fff0f0;
+    border: 1px solid #e4abab;
+}
+
+.vazio {
+    background: #f8fbff;
+    border: 1px dashed var(--line);
+}

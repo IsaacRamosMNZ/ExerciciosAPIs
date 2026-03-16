@@ -1,0 +1,105 @@
+:root {
+    --bg-a: #ecf1ff;
+    --bg-b: #f5f8ff;
+    --card: #ffffff;
+    --text: #1f2b3a;
+    --line: #d6deeb;
+    --accent: #234dc5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: var(--text);
+    background: linear-gradient(145deg, var(--bg-a), var(--bg-b));
+    padding: 24px 14px;
+}
+
+.container {
+    max-width: 740px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 10px 24px rgba(20, 35, 58, 0.1);
+}
+
+h1 {
+    margin: 0 0 14px;
+}
+
+.form-busca {
+    display: grid;
+    gap: 8px;
+}
+
+.linha {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    border: 1px solid #c4d0e3;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+button {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-weight: 700;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+}
+
+.mensagem {
+    border-radius: 10px;
+    padding: 11px;
+    font-weight: 600;
+}
+
+.sucesso {
+    background: #e9f8ef;
+    border: 1px solid #9ad2ac;
+}
+
+.erro {
+    background: #fff0f0;
+    border: 1px solid #e6aaaa;
+}
+
+.resultado {
+    margin-top: 18px;
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+}
+
+.resultado ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.resultado li {
+    padding: 9px;
+    border: 1px solid #dce5f2;
+    border-radius: 8px;
+    background: #f8fbff;
+}
+
+@media (max-width: 560px) {
+    .linha {
+        flex-direction: column;
+    }
+}

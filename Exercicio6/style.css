@@ -1,0 +1,82 @@
+:root {
+    --bg-a: #eef6ff;
+    --bg-b: #fff5ea;
+    --card: #ffffff;
+    --text: #1d2a3a;
+    --muted: #5d6d7d;
+    --line: #d8e4f0;
+    --accent: #0e63d8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: var(--text);
+    background: linear-gradient(130deg, var(--bg-a), var(--bg-b));
+    padding: 24px 14px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.subtitulo {
+    margin: 0 0 18px;
+    color: var(--muted);
+}
+
+.grid-posts {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card-post {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 8px 20px rgba(23, 40, 58, 0.08);
+}
+
+.post-id {
+    margin: 0 0 8px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.card-post h2 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+}
+
+.card-post p {
+    margin: 0;
+    white-space: pre-line;
+}
+
+.mensagem {
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.erro {
+    background: #ffeef1;
+    border: 1px solid #e4a8b0;
+}
+
+.vazio {
+    background: #f7fbff;
+    border: 1px dashed var(--line);
+}
